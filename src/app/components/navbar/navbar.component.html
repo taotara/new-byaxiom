@@ -1,0 +1,27 @@
+<nav class="shadow-sm">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-3 d-flex flex-wrap align-items-center">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-9 col-9 text-end">
+      <div class="menu-icon" [class.menu-icon-class]="menuIconVariable" (click)="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" [class.menuClass]="menuVariable">
+        <ul>
+          <a routerLink="/"><li> Home </li></a>
+          <a routerLink="/services"><li> Services </li></a>
+          <a routerLink="/products"><li> Products </li></a>
+          <a routerLink="/about"><li> About </li></a>
+          <a routerLink="/contact"><li> Contacts </li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>

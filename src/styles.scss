@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+
+:root {
+  --color-primary: #033357;
+  --color-secondary: #0A70C7;
+  --color-thirtiary: #0977D0;
+  --color-Light-blue: #F6F9FE;
+  --color-text: #656567;
+  --color-footer-link: #242424;
+
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
