@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { WecomeSectionComponent } from './components/wecome-section/wecome-section.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SliderComponent } from './components/slider/slider.component';
     NavbarComponent,
     FooterComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+    WecomeSectionComponent
   ],
   imports: [
     BrowserModule,
