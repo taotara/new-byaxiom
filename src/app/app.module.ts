@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { WecomeSectionComponent } from './components/wecome-section/wecome-section.component';
+import { ServicesSetionComponent } from './components/services-setion/services-setion.component';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { WecomeSectionComponent } from './components/wecome-section/wecome-secti
     FooterComponent,
     HeaderComponent,
     SliderComponent,
-    WecomeSectionComponent
+    WecomeSectionComponent,
+    ServicesSetionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
