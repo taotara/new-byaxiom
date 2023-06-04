@@ -16,6 +16,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { WecomeSectionComponent } from './components/wecome-section/wecome-section.component';
 import { ServicesSetionComponent } from './components/services-setion/services-setion.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
+import { ProductSectionComponent } from './components/product-section/product-section.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactSectionComponent } from './components/contact-section/contact-se
     SliderComponent,
     WecomeSectionComponent,
     ServicesSetionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    ProductSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,102 @@
 .contact-section {
   background-image: url(../../../assets/cusotmer_care.jpg);
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding-top: 150px;
+
+  .contact-info-box {
+    background: rgba($color: #0a74ccb2, $alpha: 0.5);
+    background-image: url(../../../assets/left_corner_white.png);
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 50px;
+
+    h2 {
+      font-family: "Jost", sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: white;
+    }
+
+    p {
+      font-family: "Jost", sans-serif;
+      font-size: 18px;
+      font-weight: 400px;
+      line-height: 28px;
+      color: white;
+      text-align: justify;
+    }
+
+    .phone-number {
+      .icon {
+        background: white;
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        border-radius: 50%;
+        color: var(--color-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        position: relative;
+        z-index: 30;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 70%;
+          width: 70%;
+          background: white;
+          border-radius: 50%;
+          z-index: -1;
+          opacity: 0.7;
+        }
+
+        &::before {
+          animation: pulse 2s ease-out infinite;
+        }
+
+        &::after {
+          animation: pulse 2s 1s ease-out infinite;
+        }
+      }
+
+      @keyframes pulse {
+        100% {
+          transform: scale(2.5);
+          opacity: 0;
+        }
+      }
+
+      h4 {
+        font-family: "Jost", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-section {
+    display: flex;
+    justify-content: start;
+    background-position: 15% top;
+    padding: 0;
+
+    .contact-info-box {
+      width: 100%;
+
+      .phone-number {
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
 }
