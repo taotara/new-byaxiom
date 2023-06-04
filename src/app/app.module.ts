@@ -17,6 +17,7 @@ import { WecomeSectionComponent } from './components/wecome-section/wecome-secti
 import { ServicesSetionComponent } from './components/services-setion/services-setion.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 import { ProductSectionComponent } from './components/product-section/product-section.component';
+import { ClienteleSectionComponent } from './components/clientele-section/clientele-section.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProductSectionComponent } from './components/product-section/product-se
     WecomeSectionComponent,
     ServicesSetionComponent,
     ContactSectionComponent,
-    ProductSectionComponent
+    ProductSectionComponent,
+    ClienteleSectionComponent
   ],
   imports: [
     BrowserModule,

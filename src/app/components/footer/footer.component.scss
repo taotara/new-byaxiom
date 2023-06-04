@@ -1,0 +1,47 @@
+.footer {
+  padding-top: 50px;
+  .top {
+    background: var(--color-Light-blue);
+
+    .content-box {
+      p {
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        color: #656567;
+        text-align: justify;
+        padding-top: 20px;
+      }
+
+      h4 {
+        font-family: "Jost", sans-serif;
+        color: var(--color-primary);
+        font-size: 22px;
+        padding-bottom: 20px;
+      }
+
+      ul {
+        width: fit-content;
+
+        a {
+          font-family: "Jost", sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+          list-style: none;
+          color: var(--color-secondary);
+
+          &:hover {
+            color: var(--color-primary);
+          }
+
+          li {
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background: var(--color-primary);
+  }
+}
