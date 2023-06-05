@@ -36,5 +36,23 @@
   .carousel-box {
     height: 150px;
     background: #E5E5E5;
+
+    .img-box {
+      height: 100%;
+      width: 240px;
+      border-left: solid 1px var(--color-primary);
+      border-right: solid 1px var(--color-primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        filter: saturate(0);
+
+        &:hover {
+          filter: none;
+        }
+      }
+    }
   }
 }

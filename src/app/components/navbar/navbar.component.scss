@@ -30,6 +30,21 @@ nav {
           }
         }
       }
+      li {
+          list-style: none;
+          color: var(--color-primary);
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 24px;
+
+          &:hover {
+            color: var(--color-secondary);
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+          }
+        }
+      
     }
   }
 }
