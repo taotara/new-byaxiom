@@ -15,21 +15,30 @@
       <div class="menu" [class.menuClass]="menuVariable">
         <ul>
           <a routerLink="/"><li> Home </li></a>
-          <a routerLink="/services"><li> Services </li></a>
-          <a routerLink="/products"><li> Products </li></a>
-          <a routerLink="/about"><li> About </li></a>
-          <a routerLink="/contact"><li> Contacts </li></a>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/"><li>Action</li></a>
-            <a class="dropdown-item" routerLink="/"><li>Another action</li></a>
-            <li><hr class="dropdown-divider"></li>
-            <a class="dropdown-item" routerLink="/"><li>Something else here</li></a>
+            <a class="dropdown-item" routerLink="/services/software-development"><li>Software Development</li></a>
+            <a class="dropdown-item" routerLink="/services/web-application"><li>Web Application</li></a>
+            <a class="dropdown-item" routerLink="/services/training"><li>Training</li></a>
+            <a class="dropdown-item" routerLink="/services/consultancy"><li>Consultancy</li></a>
+            <a class="dropdown-item" routerLink="/services/web-dev-hosting"><li>Website Development and Hosting</li></a>
           </ul>
         </li>
+          <a routerLink="/products"><li> Products </li></a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/about/the-company"><li>The Company</li></a>
+            <a class="dropdown-item" routerLink="/about/portfolio"><li>Our Portfolio</li></a>
+          </ul>
+        </li>
+          
+          <a routerLink="/contact"><li> Contacts </li></a>
+          
           
         </ul>
       </div>

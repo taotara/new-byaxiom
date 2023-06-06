@@ -18,6 +18,14 @@ import { ServicesSetionComponent } from './components/services-setion/services-s
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 import { ProductSectionComponent } from './components/product-section/product-section.component';
 import { ClienteleSectionComponent } from './components/clientele-section/clientele-section.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
+import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
+import { WebApplicationComponent } from './pages/services/web-application/web-application.component';
+import { TrainingComponent } from './pages/services/training/training.component';
+import { ConsultancyComponent } from './pages/services/consultancy/consultancy.component';
+import { WebsiteDevAndHostingComponent } from './pages/services/website-dev-and-hosting/website-dev-and-hosting.component';
+import { TheCompanyComponent } from './pages/about/the-company/the-company.component';
+import { OurPortfolioComponent } from './pages/about/our-portfolio/our-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +43,15 @@ import { ClienteleSectionComponent } from './components/clientele-section/client
     ServicesSetionComponent,
     ContactSectionComponent,
     ProductSectionComponent,
-    ClienteleSectionComponent
+    ClienteleSectionComponent,
+    PageTitleComponent,
+    SoftwareDevelopmentComponent,
+    WebApplicationComponent,
+    TrainingComponent,
+    ConsultancyComponent,
+    WebsiteDevAndHostingComponent,
+    TheCompanyComponent,
+    OurPortfolioComponent
   ],
   imports: [
     BrowserModule,
