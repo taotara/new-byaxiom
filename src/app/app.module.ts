@@ -26,6 +26,8 @@ import { ConsultancyComponent } from './pages/services/consultancy/consultancy.c
 import { WebsiteDevAndHostingComponent } from './pages/services/website-dev-and-hosting/website-dev-and-hosting.component';
 import { TheCompanyComponent } from './pages/about/the-company/the-company.component';
 import { OurPortfolioComponent } from './pages/about/our-portfolio/our-portfolio.component';
+import { ServicesMenuComponent } from './components/services-menu/services-menu.component';
+import { ContactBannerComponent } from './components/contact-banner/contact-banner.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { OurPortfolioComponent } from './pages/about/our-portfolio/our-portfolio
     ConsultancyComponent,
     WebsiteDevAndHostingComponent,
     TheCompanyComponent,
-    OurPortfolioComponent
+    OurPortfolioComponent,
+    ServicesMenuComponent,
+    ContactBannerComponent
   ],
   imports: [
     BrowserModule,
