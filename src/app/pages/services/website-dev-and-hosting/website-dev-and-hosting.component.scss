@@ -1,0 +1,52 @@
+.web-dev-host {
+  margin-top: 100px;
+
+  .contents {
+    .title {
+      background-image: url(../../../../assets/left_coner.png);
+      background-repeat: no-repeat;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+
+      h2 {
+        font-family: "Jost", sans-serif;
+        color: var(--color-primary);
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 50.3px;
+      }
+    }
+    p {
+      font-family: "Jost", sans-serif;
+      font-size: 18px;
+      font-weight: 400px;
+      line-height: 28px;
+      color: #656567;
+      text-align: justify;
+      padding: 10px 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 25px;
+      margin: 40px 0;
+    }
+
+    ul {
+      
+
+      li {
+        background: url("../../../../assets/tick-circle.png") no-repeat left 18px;
+        list-style: none;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 28px;
+        color: #656567;
+        text-align: justify;
+        padding: 20px 0px 20px 50px;
+      }
+    }
+  }
+}
