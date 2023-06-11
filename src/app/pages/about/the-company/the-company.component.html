@@ -1,1 +1,84 @@
-<p>the-company works!</p>
+<app-page-title></app-page-title>
+<div class="the-company">
+  <div class="container">
+    <div class="contents">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="title">
+            <h2>Welcome To Byaxiom Solutions Limited!</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            We are a leading software firm dedicated to delivering exceptional
+            solutions tailored to your needs. With our expertise in custom
+            software development, web and mobile app development, and
+            comprehensive support, we empower businesses to thrive in the
+            digital era. Partner with us and unlock the full potential of your
+            organization through innovative software solutions. Contact us today
+            and embark on a transformative journey to success.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <img src="../../../../assets/about_us1.jpg" alt="" />
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../../../../assets/about_us2.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <div class="statements">
+            <div class="title">
+              <h2>Transforming Businesses with Cutting-Edge IT Solutions</h2>
+            </div>
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+              <li [ngbNavItem]="1">
+                <button ngbNavLink>Our Mission</button>
+                <ng-template ngbNavContent>
+                  <p>
+                    Simply, our mission is to produce software of various
+                    categories of international qualities first for Nigeria
+                    market, then Africa and world at large.
+                  </p>
+                </ng-template>
+              </li>
+              <li [ngbNavItem]="2">
+                <button ngbNavLink>Our Vision</button>
+                <ng-template ngbNavContent>
+                  <p>
+                    To become a synonym to quality software in Nigeria market,
+                    Africa and World at large.
+                  </p>
+                </ng-template>
+              </li>
+            </ul>
+
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          BYAXIOM Solutions Limited is a fully registered company under the
+          Companies & Allied Matters Act of 1990 with Registration No: RC
+          634374. The company’s strength lies in gathering in-depth business
+          domain knowledge by scientifically capturing, managing system
+          requirements and converting them into a robust design, which can
+          withstand changes and is relatively risk free. This ensures the
+          success of the project undertaken.The company is apt at developing
+          frameworks, based on a service-based architecture, which help in
+          converting a design into a strong product quickly and efficiently. Our
+          products and services are designed to ensure maximum availability,
+          product and system integrity, robustness and security while enhancing
+          flexibility, optimal utilization and cost-effectiveness.This gives us
+          the ability to develop products and projects, which have high
+          magnitude of complexities or large volume of data. We are always
+          happier at the end of any project because we become stronger and
+          smarter after executing any task. That is exactly what keeps us in the
+          business.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

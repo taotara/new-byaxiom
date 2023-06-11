@@ -1,9 +1,9 @@
-.the-company {
+.staff-manager {
   margin-top: 100px;
 
   .contents {
     .title {
-      background-image: url(../../../../assets/left_coner.png);
+      background-image: url(../../../assets/left_coner.png);
       background-repeat: no-repeat;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -33,17 +33,19 @@
       margin: 40px 0;
     }
 
-    .statements {
-      margin-top: 40px;
+    ul {
+      
 
-      .nav-tabs {
-        border-bottom: solid 2px var(--color-secondary);
-
-        .nav-link.active {
-          background: var(--color-secondary);
-          border-bottom: solid 2px var(--color-secondary);
-          color: white;
-        }
+      li {
+        background: url("../../../assets/tick-circle.png") no-repeat left 18px;
+        list-style: none;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 28px;
+        color: #656567;
+        text-align: justify;
+        padding: 20px 0px 20px 50px;
       }
     }
   }

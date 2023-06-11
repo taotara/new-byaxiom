@@ -1,0 +1,81 @@
+.our-portfolio {
+  margin-top: 100px;
+
+  .contents {
+    .title {
+      background-image: url(../../../../assets/left_coner.png);
+      background-repeat: no-repeat;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+
+      h2 {
+        font-family: "Jost", sans-serif;
+        color: var(--color-primary);
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 50.3px;
+      }
+    }
+
+    p {
+      font-family: "Jost", sans-serif;
+      font-size: 18px;
+      font-weight: 400px;
+      line-height: 28px;
+      color: #656567;
+      text-align: justify;
+      padding: 10px 0;
+    }
+
+    .portfolio-box {
+      .card {
+        display: flex;
+        align-items: center;
+        border: none;
+
+        .img-box {
+          width: 80%;
+          height: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .card-img-top {
+            width: 40%;
+            margin-top: 20px;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+
+        .card-body {
+          .card-title {
+            font-family: "Jost", sans-serif;
+            color: var(--color-primary);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            text-align: center;
+          }
+
+          .card-text {
+            font-family: "Jost", sans-serif;
+            font-size: 16px;
+            font-weight: 400px;
+            line-height: 28px;
+            color: #656567;
+            text-align: center;
+            padding: 10px 0;
+          }
+        }
+
+        &:hover {
+          .card-img-top {
+            transform: translateY(-20px);
+          }
+        }
+      }
+    }
+  }
+}

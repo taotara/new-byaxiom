@@ -28,6 +28,11 @@ import { TheCompanyComponent } from './pages/about/the-company/the-company.compo
 import { OurPortfolioComponent } from './pages/about/our-portfolio/our-portfolio.component';
 import { ServicesMenuComponent } from './components/services-menu/services-menu.component';
 import { ContactBannerComponent } from './components/contact-banner/contact-banner.component';
+import { ProductMenuComponent } from './components/product-menu/product-menu.component';
+import { StaffMangerComponent } from './pages/staff-manger/staff-manger.component';
+import { FarmManagerComponent } from './pages/farm-manager/farm-manager.component';
+import { PoolSolComponent } from './pages/pool-sol/pool-sol.component';
+import { SchoolManagerComponent } from './pages/school-manager/school-manager.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +60,12 @@ import { ContactBannerComponent } from './components/contact-banner/contact-bann
     TheCompanyComponent,
     OurPortfolioComponent,
     ServicesMenuComponent,
-    ContactBannerComponent
+    ContactBannerComponent,
+    ProductMenuComponent,
+    StaffMangerComponent,
+    FarmManagerComponent,
+    PoolSolComponent,
+    SchoolManagerComponent
   ],
   imports: [
     BrowserModule,

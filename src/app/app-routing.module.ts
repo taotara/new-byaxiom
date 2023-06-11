@@ -12,6 +12,10 @@ import { ConsultancyComponent } from './pages/services/consultancy/consultancy.c
 import { WebsiteDevAndHostingComponent } from './pages/services/website-dev-and-hosting/website-dev-and-hosting.component';
 import { TheCompanyComponent } from './pages/about/the-company/the-company.component';
 import { OurPortfolioComponent } from './pages/about/our-portfolio/our-portfolio.component';
+import { StaffMangerComponent } from './pages/staff-manger/staff-manger.component';
+import { FarmManagerComponent } from './pages/farm-manager/farm-manager.component';
+import { PoolSolComponent } from './pages/pool-sol/pool-sol.component';
+import { SchoolManagerComponent } from './pages/school-manager/school-manager.component';
 
 const routes: Routes = [
   {
@@ -58,6 +62,26 @@ const routes: Routes = [
     path: 'products',
     component: ProductsComponent,
     title: 'Products',
+  },
+  {
+    path: 'products/staff-manager',
+    component: StaffMangerComponent,
+    title: 'Staff Manager',
+  },
+  {
+    path: 'products/farm-manager',
+    component: FarmManagerComponent,
+    title: 'Farm Manager',
+  },
+  {
+    path: 'products/pool-sol',
+    component: PoolSolComponent,
+    title: 'Poolsol',
+  },
+  {
+    path: 'products/school-manager',
+    component: SchoolManagerComponent,
+    title: 'School Manager',
   },
   {
     path: 'about',

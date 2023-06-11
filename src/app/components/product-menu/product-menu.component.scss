@@ -1,0 +1,42 @@
+.product-menu {
+  margin-top: 20px;
+  .title {
+    h2 {
+      font-family: "Jost", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+  }
+
+  .menu {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    list-style-type: none;
+    margin-left: -30px;
+
+    .menu-item {
+      text-decoration: none;
+      li {
+        background: var(--color-Light-blue);
+        margin: 10px 0;
+        padding: 15px;
+        border: solid 1px #dde3ec;
+        border-radius: 10px;
+        color: var(--color-primary);
+        transition: all 0.4s;
+
+        &:hover {
+          background: var(--color-primary);
+          color: white;
+        }
+      }
+    }
+
+    .active li {
+      background: var(--color-primary);
+          color: white;
+    }
+  }
+}
