@@ -8,4 +8,5 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class TheCompanyComponent {
   active = 1;
+  pageTitle = 'The Company';
 }
