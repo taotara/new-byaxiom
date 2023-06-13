@@ -24,10 +24,12 @@ export class ContactsComponent {
       .then(
         (result: EmailJSResponseStatus) => {
           this.success = true;
+          // this.emailjs.reset();
         },
         (error) => {
           this.error = true;
         }
-      );
+    );
+    
   }
 }
