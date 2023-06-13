@@ -9,6 +9,9 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 export class ContactsComponent {
   pageTitle = 'Contacts';
 
+  success: boolean = false;
+  error: boolean = false;
+
   public sendEmail(e: Event) {
     e.preventDefault();
     emailjs
@@ -20,10 +23,10 @@ export class ContactsComponent {
       )
       .then(
         (result: EmailJSResponseStatus) => {
-          console.log(result.text);
+          this.success = true;
         },
         (error) => {
-          console.log(error.text);
+          this.error = true;
         }
       );
   }
