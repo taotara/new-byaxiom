@@ -1,5 +1,5 @@
 .welcome-section {
-  margin-top: 100px;
+  margin-top: 20px;
   .welcome-img-box {
   position: relative;
   padding: 20px;
@@ -80,6 +80,11 @@
 
         &:hover {
           background: var(--color-primary);
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
         }
       }
     }

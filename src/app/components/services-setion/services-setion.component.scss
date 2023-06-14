@@ -135,10 +135,10 @@ section {
             left: 100%;
 
             &::before {
-              width: 450px;
-              height: 450px;
-              top: -380px;
-              left: -400px;
+              width: 950px;
+              height: 950px;
+              top: -480px;
+              left: -700px;
             }
           }
           .icon-box-white {
@@ -151,7 +151,29 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-  .welcome-txt-box{
+  .welcome-txt-box {
     margin-top: 80px;
   }
 }
+
+// @media only screen and (min-width: 1400px) {
+//   .card {
+//     &:hover {
+//       .card-head {
+//         // border: solid 3px greenyellow;
+//         .icon-box {
+//           bottom: -100%;
+//           left: 100%;
+
+//           &::before {
+//             background: greenyellow;
+//             // width: 750px;
+//             // height: 750px;
+//             // top: -480px;
+//             // left: -900px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

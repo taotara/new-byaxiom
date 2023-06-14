@@ -1,4 +1,5 @@
 ngb-carousel {
+  margin-top: 200px;
   max-width: 100%;
   max-height: 646px;
   width: inherit;
@@ -13,9 +14,10 @@ ngb-carousel {
   &::after {
     content: "";
     background-image: url(../../../assets/slash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 646px;
     width: 800px;
-    background-repeat: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -94,6 +96,17 @@ ngb-carousel {
       text-align: center;
       font-size: 28px;
       font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  ngb-carousel {
+    max-height: 846px;
+
+    &::after {
+      height: 946px;
+      width: 1020px;
     }
   }
 }
