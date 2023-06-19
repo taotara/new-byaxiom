@@ -30,8 +30,12 @@
           <div class="content-box">
             <h4>Our Services</h4>
             <ul>
-              <a routerLink="/services/software-development"><li>Software Development</li></a>
-              <a routerLink="/services/web-application"><li>Web Application</li></a>
+              <a routerLink="/services/software-development"
+                ><li>Software Development</li></a
+              >
+              <a routerLink="/services/web-application"
+                ><li>Web Application</li></a
+              >
               <a routerLink="/services/training"><li>Training</li></a>
               <a routerLink="/services/consultancy"><li>Consultancy</li></a>
               <a routerLink="/services/web-dev-hosting"
@@ -46,16 +50,25 @@
             <div class="contact-info">
               <span><i class="bi bi-geo-alt-fill"></i></span>
               <p>
-                6, Mojidi Street, Off Toyin Street, Ikeja, Lagos State, Nigeria.
+                <a
+                  href="https://www.google.com/maps/place/6+Mojidi+St,+Allen+101233,+Lagos/@6.5976837,3.3444932,17.7z/data=!4m10!1m2!2m1!1s6+Mojidi+St+Allen+101233+Lagos!3m6!1s0x103b9225664066a1:0x8b060eddac740fea!8m2!3d6.5988666!4d3.3474944!15sCh42IE1vamlkaSBTdCBBbGxlbiAxMDEyMzMgTGFnb3OSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11g8_1y6dq?hl=en-GB&entry=ttu"
+                  target="_blank"
+                  >6, Mojidi Street, Off Toyin Street, Ikeja, Lagos State,
+                  Nigeria.</a
+                >
               </p>
             </div>
             <div class="contact-info">
               <span><i class="bi bi-envelope-fill"></i></span>
-              <p>mailto:info@byaxiom.com</p>
+              <p><a href="mailto:info@byaxiom.com">info@byaxiom.com</a></p>
             </div>
             <div class="contact-info">
               <span><i class="bi bi-telephone-fill"></i></span>
-              <p>+234 (0) 1 342 2293 <br> +234 803 698 2314 <br> +234 803 589 7822</p>
+              <p>
+                <a href="tel:+234 (0) 1 342 2293">+234 (0) 1 342 2293</a>
+                <br /><a href="tel:+234 803 698 2314">+234 803 698 2314</a>
+                <br /><a href="tel:+234 803 589 7822">+234 803 589 7822</a>
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +77,10 @@
   </div>
   <div class="bottom">
     <div class="container">
-      <p>Byaxiom Solutions Limited, © {{year | date: 'yyyy'}} All rights reserved.</p>
+      <p>
+        Byaxiom Solutions Limited, © {{ year | date : "yyyy" }} All rights
+        reserved.
+      </p>
     </div>
   </div>
 </div>

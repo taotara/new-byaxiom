@@ -58,6 +58,15 @@
           font-size: 18px;
           font-weight: 400px;
           color: #656567;
+
+          a {
+            color: #656567;
+            text-decoration: none;
+
+            &:hover {
+              color: var(--color-secondary)
+            }
+          }
         }
       }
     }
