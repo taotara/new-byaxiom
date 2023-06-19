@@ -127,7 +127,7 @@
     .form-area {
       background: var(--color-Light-blue);
       border-radius: 25px;
-      padding: 20px;
+      padding: 0px;
       .contact-form-img {
         img {
           width: 100%;
@@ -137,7 +137,8 @@
 
       .contact-form {
         margin-top: 0;
-        padding: auto 30px;
+        // padding: auto 30px;
+        padding-right: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -24,7 +24,7 @@ export class ContactsComponent {
       .then(
         (result: EmailJSResponseStatus) => {
           this.success = true;
-          // this.reset();
+          
         },
         (error) => {
           this.error = true;

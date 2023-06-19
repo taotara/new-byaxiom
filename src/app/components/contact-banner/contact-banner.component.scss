@@ -3,7 +3,7 @@
   background: var(--color-secondary);
   background-image: url(../../../assets/talktous.png);
   background-repeat: no-repeat;
-  background-position: 175% 180%;
+  background-position: 150% 180%;
   min-height: 340px;
   border-radius: 10px;
   padding: 20px;
@@ -15,6 +15,7 @@
       font-weight: 500;
       color: white;
       margin-bottom: 20px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     }
 
     p {
@@ -25,6 +26,7 @@
       color: white;
       text-align: justify;
       margin-top: 20px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     }
 
     .btn-now {
@@ -35,6 +37,7 @@
       font-size: 16px;
       font-weight: 600;
       color: var(--color-secondary);
+      border: solid 5px var(--color-primary);
       padding: 10px;
       border: none;
       text-align: center;
@@ -95,7 +98,7 @@
         font-size: 16px;
         font-weight: 600;
         color: white;
-        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
       }
     }
   }
