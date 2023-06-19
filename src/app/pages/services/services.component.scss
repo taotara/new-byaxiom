@@ -1,0 +1,179 @@
+section {
+  // margin-top: 150px;
+  background: #f6f9fe;
+
+  .services-section-box {
+    padding: 50px 0;
+
+    .services-txt-box {
+      background-image: url(../../../assets/left_coner.png);
+      background-repeat: no-repeat;
+      padding-top: 20px;
+      padding-left: 30px;
+
+      h3 {
+        font-family: "Jost", sans-serif;
+        color: var(--color-primary);
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 50.3px;
+      }
+
+      p {
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 28px;
+        color: #656567;
+        text-align: justify;
+      }
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+
+      .card-head {
+        background-repeat: no-repeat;
+        margin: 10px;
+        border-radius: 10px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+
+        .icon-box {
+          width: 150px;
+          height: 150px;
+          background: var(--color-secondary);
+          border-radius: 50%;
+          padding: 25px 0 0 25px;
+          position: absolute;
+          bottom: -35%;
+          right: -18%;
+          z-index: 10;
+          transition: all 0.4s;
+
+          &::before {
+            content: "";
+            width: 170px;
+            height: 170px;
+            background: var(--color-secondary);
+            position: absolute;
+            border-radius: 50%;
+            top: -10px;
+            left: -10px;
+            opacity: 50%;
+            z-index: -20;
+            transition: all 0.4s;
+          }
+
+          svg {
+            height: 45px;
+            fill: white;
+          }
+        }
+
+        .icon-box-white {
+          background: white;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 50%;
+          margin-left: -50px;
+          top: 50%;
+          margin-top: -50px;
+          z-index: 20;
+          scale: 0;
+          transition: scale 0.4s;
+
+          svg {
+            fill: var(--color-primary);
+            height: 40px;
+          }
+        }
+      }
+
+      .card-body {
+        h5 {
+          font-family: "Jost", sans-serif;
+          font-size: 20px;
+          color: var(--color-primary);
+          text-align: center;
+          position: relative;
+        }
+        p {
+          font-family: "Jost", sans-serif;
+          font-size: 16px;
+          font-weight: 400px;
+          line-height: 28px;
+          color: #656567;
+          text-align: justify;
+          margin-bottom: 50px;
+        }
+
+        .read-more {
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--color-primary);
+          text-decoration: none;
+          position: absolute;
+          bottom: 10px;
+
+          &:hover {
+            color: var(--color-secondary);
+          }
+        }
+      }
+
+      &:hover {
+        .card-head {
+          .icon-box {
+            bottom: -100%;
+            left: 100%;
+
+            &::before {
+              width: 950px;
+              height: 950px;
+              top: -480px;
+              left: -700px;
+            }
+          }
+          .icon-box-white {
+            scale: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-txt-box {
+    margin-top: 80px;
+  }
+}
+
+// @media only screen and (min-width: 1400px) {
+//   .card {
+//     &:hover {
+//       .card-head {
+//         // border: solid 3px greenyellow;
+//         .icon-box {
+//           bottom: -100%;
+//           left: 100%;
+
+//           &::before {
+//             background: greenyellow;
+//             // width: 750px;
+//             // height: 750px;
+//             // top: -480px;
+//             // left: -900px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
