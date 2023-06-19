@@ -1,59 +1,140 @@
 <nav class="shadow-sm sticky-top">
   <div class="container">
-  <div class="row">
-    <div class="col-md-3 col-sm-3 col-3 d-flex flex-wrap align-items-center">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo">
-      </div>
-    </div>
-    <div class="col-md-9 col-sm-9 col-9 text-end">
-      <div class="menu-icon" [class.menu-icon-class]="menuIconVariable" (click)="openMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu" [class.menuClass]="menuVariable">
-        <ul>
-          <a routerLink="/" routerLinkActive="active"><li> Home </li></a>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3 d-flex flex-wrap align-items-center">
+        <div class="logo">
+          <a routerLink="/">
+            <img src="assets/logo.png" alt="Logo" />
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/services/software-development" routerLinkActive="active"><li>Software Development</li></a>
-            <a class="dropdown-item" routerLink="/services/web-application" routerLinkActive="active"><li>Web Application</li></a>
-            <a class="dropdown-item" routerLink="/services/training" routerLinkActive="active"><li>Training</li></a>
-            <a class="dropdown-item" routerLink="/services/consultancy" routerLinkActive="active"><li>Consultancy</li></a>
-            <a class="dropdown-item" routerLink="/services/web-dev-hosting" routerLinkActive="active"><li>Website Development and Hosting</li></a>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div
+          class="menu-icon"
+          [class.menu-icon-class]="menuIconVariable"
+          (click)="openMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <a routerLink="/" routerLinkActive="active"><li>Home</li></a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  routerLink="/services/software-development"
+                  routerLinkActive="active"
+                  ><li>Software Development</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/services/web-application"
+                  routerLinkActive="active"
+                  ><li>Web Application</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/services/training"
+                  routerLinkActive="active"
+                  ><li>Training</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/services/consultancy"
+                  routerLinkActive="active"
+                  ><li>Consultancy</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/services/web-dev-hosting"
+                  routerLinkActive="active"
+                  ><li>Website Development and Hosting</li></a
+                >
+              </ul>
+            </li>
+            <!-- <a routerLink="/products" routerLinkActive="active"><li> Products </li></a> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  routerLink="/products/staff-manager"
+                  routerLinkActive="active"
+                  ><li>Byaxiom StaffManager</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/products/farm-manager"
+                  routerLinkActive="active"
+                  ><li>Byaxiom FarmManager</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/products/pool-sol"
+                  routerLinkActive="active"
+                  ><li>Byaxiom Poolsol</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/products/school-manager"
+                  routerLinkActive="active"
+                  ><li>Byaxiom SchoolManager</li></a
+                >
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  routerLink="/about/the-company"
+                  routerLinkActive="active"
+                  ><li>The Company</li></a
+                >
+                <a
+                  class="dropdown-item"
+                  routerLink="/about/portfolio"
+                  routerLinkActive="active"
+                  ><li>Our Portfolio</li></a
+                >
+              </ul>
+            </li>
+
+            <a routerLink="/contact" routerLinkActive="active"
+              ><li>Contacts</li></a
+            >
           </ul>
-        </li>
-          <!-- <a routerLink="/products" routerLinkActive="active"><li> Products </li></a> -->
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/products/staff-manager" routerLinkActive="active"><li>Byaxiom StaffManager</li></a>
-            <a class="dropdown-item" routerLink="/products/farm-manager" routerLinkActive="active"><li>Byaxiom FarmManager</li></a>
-            <a class="dropdown-item" routerLink="/products/pool-sol" routerLinkActive="active"><li>Byaxiom Poolsol</li></a>
-            <a class="dropdown-item" routerLink="/products/school-manager" routerLinkActive="active"><li>Byaxiom SchoolManager</li></a>
-          </ul>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/about/the-company" routerLinkActive="active"><li>The Company</li></a>
-            <a class="dropdown-item" routerLink="/about/portfolio" routerLinkActive="active"><li>Our Portfolio</li></a>
-          </ul>
-        </li>
-          
-          <a routerLink="/contact" routerLinkActive="active"><li> Contacts </li></a>
-          
-          
-        </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </nav>
-
-
