@@ -60,6 +60,10 @@ nav {
                   margin: 5px;
                 }
               }
+
+             .dropdown-item.active, .dropdown-item:active  {
+              background: var(--color-secondary);
+             }
           }
         }
       

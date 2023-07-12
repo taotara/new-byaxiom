@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
@@ -7,6 +8,8 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contacts.component.scss'],
 })
 export class ContactsComponent {
+  mailForm!: FormGroup;
+
   pageTitle = 'Contacts';
 
   success: boolean = false;
@@ -24,12 +27,11 @@ export class ContactsComponent {
       .then(
         (result: EmailJSResponseStatus) => {
           this.success = true;
-          
+          this.mailForm.reset();
         },
         (error) => {
           this.error = true;
         }
-    );
-    
+      );
   }
 }

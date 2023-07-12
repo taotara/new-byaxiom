@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-the-company',
@@ -9,4 +9,8 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 export class TheCompanyComponent {
   active = 1;
   pageTitle = 'The Company';
+
+  ngOnInit() {
+    AOS.init();
+  }
 }

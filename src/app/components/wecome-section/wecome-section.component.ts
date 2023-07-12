@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-wecome-section',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class WecomeSectionComponent {
 
+  ngOnIni() {
+    AOS.init();
+}
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -33,6 +34,7 @@ import { StaffMangerComponent } from './pages/staff-manger/staff-manger.componen
 import { FarmManagerComponent } from './pages/farm-manager/farm-manager.component';
 import { PoolSolComponent } from './pages/pool-sol/pool-sol.component';
 import { SchoolManagerComponent } from './pages/school-manager/school-manager.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -65,14 +67,16 @@ import { SchoolManagerComponent } from './pages/school-manager/school-manager.co
     StaffMangerComponent,
     FarmManagerComponent,
     PoolSolComponent,
-    SchoolManagerComponent
+    SchoolManagerComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

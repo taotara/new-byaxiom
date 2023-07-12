@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-services-setion',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class ServicesSetionComponent {
 
+  ngOnInit() {
+    AOS.init()
+  }
 }

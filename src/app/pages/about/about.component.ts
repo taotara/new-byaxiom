@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   pageTitle = 'School Manager';
+
+  ngOnInit() {
+    AOS.init();
+  }
 }
